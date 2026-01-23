@@ -1,0 +1,44 @@
+/* css/style.css */
+:root {
+    --bs-primary: #2A6FFF; /* A deeper, more serious blue */
+    --bs-secondary: #6c757d;
+    --bs-dark: #0f172a;    /* Very dark blue/charcoal */
+    --bs-light: #f8fafc;
+    --bs-body-bg: #ffffff;
+}
+
+/* Apply Inter font globally */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar border on scroll */
+.navbar {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+.navbar.scrolled {
+    border-bottom-color: rgba(255,255,255,0.1);
+}
+
+/* Custom hover effect for project cards */
+.hover-shadow {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-shadow:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* Hero graphic placeholder styling */
+.hero-graphic {
+    border: 2px dashed #dee2e6;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}

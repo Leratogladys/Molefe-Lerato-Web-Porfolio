@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Backend Systems Architect</title>
+    <meta name="description" content="Building sovereign backend systems for impactful products. Backend specialist in .NET and cloud technologies.">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Inter for body, optional serif for accents -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS (We will create this file) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon (optional, add later) -->
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- ========== GLOBAL NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark border-bottom border-dark">
+        <div class="container">
+            <!-- Your Name / Logo -->
+            <a class="navbar-brand fw-bold" href="index.html">YourName</a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="writing.html">Writing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="approach.html">Approach</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main class="flex-grow-1 pt-5 mt-3"> <!-- pt-5 mt-3 offsets the fixed navbar -->
+
+        <!-- ========== SECTION 1: HERO ========== -->
+        <section id="hero" class="py-5 py-lg-7">
+            <div class="container py-lg-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-8 order-lg-1 order-2">
+                        <!-- Main Headline -->
+                        <h1 class="display-3 fw-bold mb-4">
+                            Building sovereign backend systems for impactful products.
+                        </h1>
+                        <!-- Subheading / Value Proposition -->
+                        <p class="lead text-secondary mb-5">
+                            I architect resilient digital foundations with <strong>.NET</strong> and cloud technologies, guided by principles of <strong>clarity</strong>, <strong>integrity</strong>, and <strong>systems thinking</strong>.
+                        </p>
+                        <!-- Call to Action Buttons -->
+                        <div class="d-flex flex-column flex-md-row gap-3">
+                            <a href="work.html" class="btn btn-primary btn-lg px-4 py-3 shadow-sm fw-semibold">
+                                See My Systems
+                            </a>
+                            <a href="approach.html" class="btn btn-outline-secondary btn-lg px-4 py-3 fw-semibold">
+                                Understand the Approach
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-2 order-1 text-center">
+                        <!-- Placeholder for an abstract visual or headshot -->
+                        <div class="hero-graphic bg-light rounded-circle d-inline-flex align-items-center justify-content-center">
+                            <span class="text-muted fs-6">[Abstract SVG/Graphic]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION 2: FEATURED WORK ========== -->
+        <section id="featured-work" class="py-5 bg-light">
+            <div class="container py-5">
+                <!-- Section Header -->
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="display-6 fw-bold mb-3">Featured Systems</h2>
+                        <p class="text-muted lead">A selection of projects where strategic thinking met technical execution.</p>
+                    </div>
+                </div>
+
+                <!-- Project Cards -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Project Card 1 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition-all">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <!-- Project Icon & Title -->
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                        <!-- Icon placeholder (replace with SVG) -->
+                                        <svg width="24" height="24" fill="var(--bs-primary)" class="bi bi-database"></svg>
+                                    </div>
+                                    <h3 class="h5 fw-bold mb-0">API Latency Reduced by 40%</h3>
+                                </div>
+                                <!-- Challenge Summary -->
+                                <p class="text-muted flex-grow-1">
+                                    Redesigned data flow and caching layer for a high-throughput service, eliminating a critical bottleneck.
+                                </p>
+                                <!-- Tech Stack Pills -->
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark me-1 mb-1">C#</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">.NET 8</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">PostgreSQL</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">Redis</span>
+                                </div>
+                                <!-- Link to Case Study -->
+                                <a href="work.html#project-1" class="mt-auto fw-semibold text-decoration-none">
+                                    View System Diagram & Analysis →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition-all">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                        <svg width="24" height="24" fill="var(--bs-primary)" class="bi bi-shield-check"></svg>
+                                    </div>
+                                    <h3 class="h5 fw-bold mb-0">Idempotent Payment Processor</h3>
+                                </div>
+                                <p class="text-muted flex-grow-1">
+                                    Engineered a fault-tolerant payment API ensuring no duplicate charges, using idempotency keys and idempotent patterns.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark me-1 mb-1">ASP.NET Core</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">Stripe API</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">Docker</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">SQLite</span>
+                                </div>
+                                <a href="work.html#project-2" class="mt-auto fw-semibold text-decoration-none">
+                                    View System Diagram & Analysis →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-sm hover-shadow transition-all">
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="bg-primary bg-opacity-10 p-2 rounded me-3">
+                                        <svg width="24" height="24" fill="var(--bs-primary)" class="bi bi-diagram-3"></svg>
+                                    </div>
+                                    <h3 class="h5 fw-bold mb-0">Real-time Dashboard Engine</h3>
+                                </div>
+                                <p class="text-muted flex-grow-1">
+                                    Built a real-time data aggregation and visualization pipeline for operational metrics, serving 10k+ concurrent users.
+                                </p>
+                                <div class="mb-3">
+                                    <span class="badge bg-light text-dark me-1 mb-1">Node.js</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">Socket.IO</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">PostgreSQL</span>
+                                    <span class="badge bg-light text-dark me-1 mb-1">Chart.js</span>
+                                </div>
+                                <a href="work.html#project-3" class="mt-auto fw-semibold text-decoration-none">
+                                    View System Diagram & Analysis →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View All Projects Link -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <a href="work.html" class="btn btn-outline-primary px-4">
+                            View All Project Systems
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SECTION 3: FEATURED WRITING ========== -->
+        <section id="featured-writing" class="py-5">
+            <div class="container py-5">
+                <div class="row mb-5">
+                    <div class="col-12">
+                        <h2 class="display-6 fw-bold mb-3">From the Principle Repository</h2>
+                        <p class="text-muted lead">Writing on systems, technology, and strategic learning.</p>
+                    </div>
+                </div>
+
+                <!-- Article List -->
+                <div class="row g-4">
+                    <!-- Article 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="h-100 border-start border-3 border-primary ps-3 py-1">
+                            <div class="mb-2">
+                                <span class="badge bg-primary bg-opacity-10 text-primary">Technical</span>
+                                <span class="badge bg-secondary bg-opacity-10 text-secondary ms-1">.NET</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">
+                                <a href="writing/implementing-idempotency-keys.html" class="text-decoration-none text-dark">
+                                    Implementing Idempotency Keys in a .NET Web API
+                                </a>
+                            </h3>
+                            <p class="text-muted small">
+                                A step-by-step guide to ensuring payment and mutation safety in distributed systems, with a focus on the actual implementation pattern.
+                            </p>
+                            <a href="writing/implementing-idempotency-keys.html" class="small fw-semibold text-decoration-none">
+                                Read Article →
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Article 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="h-100 border-start border-3 border-primary ps-3 py-1">
+                            <div class="mb-2">
+                                <span class="badge bg-info bg-opacity-10 text-info">Career</span>
+                                <span class="badge bg-secondary bg-opacity-10 text-secondary ms-1">Strategy</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">
+                                <a href="writing/structuring-learning-sprints.html" class="text-decoration-none text-dark">
+                                    How I Structure My Learning Sprints for Maximum ROI
+                                </a>
+                            </h3>
+                            <p class="text-muted small">
+                                Moving beyond tutorials: a framework for targeted, project-driven skill acquisition that directly translates to career capital.
+                            </p>
+                            <a href="writing/structuring-learning-sprints.html" class="small fw-semibold text-decoration-none">
+                                Read Article →
+                            </a>
+                        </article>
+                    </div>
+
+                    <!-- Article 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <article class="h-100 border-start border-3 border-primary ps-3 py-1">
+                            <div class="mb-2">
+                                <span class="badge bg-dark bg-opacity-10 text-dark">Systems</span>
+                                <span class="badge bg-secondary bg-opacity-10 text-secondary ms-1">Architecture</span>
+                            </div>
+                            <h3 class="h5 fw-bold mb-2">
+                                <a href="writing/mental-models-for-backend-systems.html" class="text-decoration-none text-dark">
+                                    Mental Models for Understanding Any Backend System
+                                </a>
+                            </h3>
+                            <p class="text-muted small">
+                                The three core diagrams I draw when approaching a new codebase: data flow, state management, and failure boundaries.
+                            </p>
+                            <a href="writing/mental-models-for-backend-systems.html" class="small fw-semibold text-decoration-none">
+                                Read Article →
+                            </a>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- View All Writing Link -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <a href="writing.html" class="btn btn-outline-dark px-4">
+                            Browse the Full Principle Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== GLOBAL FOOTER ========== -->
+    <footer class="bg-dark text-light py-5 mt-auto">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© <span id="current-year">2024</span> YourName. Built with intent.</p>
+                </div>
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <!-- Social / Professional Links -->
+                    <a href="https://github.com/Leratogladys" class="text-light me-3 text-decoration-none" aria-label="GitHub">
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" class="text-light me-3 text-decoration-none" aria-label="LinkedIn">
+                        LinkedIn
+                    </a>
+                    <a href="contact.html" class="text-light text-decoration-none">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle (with Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS (minimal for now) -->
+    <script src="js/main.js"></script>
+    <script>
+        // Simple script to update the copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
